@@ -2,7 +2,7 @@
 title: Riven 
 description: Riven Media
 published: true
-date: 2024-07-15T16:02:35.212Z
+date: 2024-07-15T16:53:25.584Z
 tags: riven
 editor: markdown
 dateCreated: 2024-07-15T15:43:03.194Z
@@ -34,8 +34,6 @@ dateCreated: 2024-07-15T15:43:03.194Z
     <img alt="Discord" src="https://img.shields.io/badge/Join%20discord-8A2BE2" />
   </a>
 </div>
-
-
 
 
 <div align="center">
@@ -146,20 +144,21 @@ User preferences influence both the Content Discovery and Scraper components, en
 
 [ElfHosted](https://elfhosted.com) is a geeky [open-source](https://elfhosted.com/open/) PaaS which provides all the "plumbing" (_hosting, security, updates, etc_) for your self-hosted apps.
 
-> [!IMPORTANT]
 > Riven is a top-tier app in the [ElfHosted app catalogue](https://elfhosted.com/apps/). 30% of your subscription goes to Riven developers, and the remainder offsets [infrastructure costs](https://elfhosted.com/open/pricing/).
-
-> [!TIP]
+> 
 > New accounts get $10 free credit, enough for a week's free trial of the [Riven / Plex Infinite Streaming](https://store.elfhosted.com/product/infinite-plex-riven-streaming-bundle) bundle!
+> 
+> (_[ElfHosted Discord](https://discord.elfhosted.com)_)
+{.is-info}
 
-(_[ElfHosted Discord](https://discord.elfhosted.com)_)
 
 ## Self Hosted
 
 ### Docker Compose
 
-> [!IMPORTANT]
 > Before you begin, ensure you have Docker and Docker Compose installed on your system.
+{.is-info}
+
 
 Create a `docker-compose.yml` file with the following contents: 
 
@@ -183,19 +182,20 @@ services:
 
 Then run `docker compose up -d` to start the container in the background. You can then access the web interface at `http://localhost:3000` or whatever port and origin you set in the `docker-compose.yml` file.
 
-> [!TIP]
 > On first run, Riven creates a `settings.json` file in the `data` directory. You can edit the settings from frontend, or manually edit the file and restart the container or use `.env` or docker-compose environment variables to set the settings (see `.env.example` for reference).
+{.is-info}
+
 
 #### What is ORIGIN?
 
-> [!IMPORTANT]
 > Setting the correct ORIGIN is crucial to avoid CORS issues and ensure proper functionality.
+{.is-warning}
+
 
 `ORIGIN` is the URL of the frontend on which you will access it from anywhere. If you are hosting Riven on a vps with IP address `123.45.67.890` then you will need to set the `ORIGIN` to `http://123.45.67.890:3000` (no trailing slash). Similarly, if using a domain name, you will need to set the `ORIGIN` to `http://riven.example.com:3000` (no trailing slash). If you change the port in the `docker-compose.yml` file, you will need to change it in the `ORIGIN` as well.
 
 ### Running outside of Docker
 
-> [!TIP]
 > Running outside of Docker can be useful for development or if you prefer more control over the environment.
 
 To run outside of docker you will need to have node (v18.13+) and python (3.10+) installed. Then clone the repository
