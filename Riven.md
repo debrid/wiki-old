@@ -2,7 +2,7 @@
 title: Riven 
 description: Riven Media
 published: true
-date: 2024-07-15T15:47:47.825Z
+date: 2024-07-15T15:54:02.434Z
 tags: riven
 editor: markdown
 dateCreated: 2024-07-15T15:43:03.194Z
@@ -130,7 +130,7 @@ We welcome feature requests and bug reports. Please use our [Issue Tracker](http
 
 ### Flowchart: How Riven Components Work Together
 
-![Components flowchart](componentsflowchart.png)
+
 
 
 This flowchart illustrates the main components of Riven and how they interact:
