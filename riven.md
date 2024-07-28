@@ -2,7 +2,7 @@
 title: Riven 
 description: Riven Media
 published: true
-date: 2024-07-15T16:54:04.031Z
+date: 2024-07-28T16:34:08.424Z
 tags: riven
 editor: markdown
 dateCreated: 2024-07-15T15:43:03.194Z
@@ -164,20 +164,63 @@ Create a `docker-compose.yml` file with the following contents:
 
 ```yml
 services:
-    riven:
-        image: spoked/riven:latest
-        container_name: riven
-        restart: unless-stopped
-        environment:
-            PUID: "1000"
-            PGID: "1000"
-            ORIGIN: "http://localhost:3000" # ORIGIN: read below to avoid CORS issues
-            BACKEND_URL: http://127.0.0.1:8080 # optional
-        ports:
-            - "3000:3000"
-        volumes:
-            - ./data:/riven/data
-            - /mnt:/mnt
+  riven-frontend:
+    image: spoked/riven-frontend:latest
+    container_name: riven-frontend
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    tty: true
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/New_York
+      - ORIGIN=http://localhost:3000 # set to the url or ip where the frontend is hosted
+      - BACKEND_URL=http://riven:8080
+    depends_on:
+      riven:
+        condition: service_healthy
+
+  riven:
+    image: spoked/riven:latest
+    container_name: riven
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    tty: true
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/New_York
+      - RIVEN_FORCE_ENV=true
+      - RIVEN_DATABASE_HOST=postgresql+psycopg2://postgres:postgres@riven-db/riven
+    healthcheck:
+      test: curl -s http://localhost:8080 >/dev/null || exit 1
+      interval: 30s
+      timeout: 10s
+      retries: 10
+    volumes:
+      - ./data:/riven/data
+      - /mnt:/mnt
+    depends_on:
+      riven_postgres:
+        condition: service_healthy
+
+  riven_postgres:
+    image: postgres:16.3-alpine3.20
+    container_name: riven-db
+    environment:
+      PGDATA: /var/lib/postgresql/data/pgdata
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: riven
+    volumes:
+      - ./riven-db:/var/lib/postgresql/data/pgdata
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
 ```
 
 Then run `docker compose up -d` to start the container in the background. You can then access the web interface at `http://localhost:3000` or whatever port and origin you set in the `docker-compose.yml` file.
