@@ -2,7 +2,7 @@
 title: Riven Settings.json
 description: 
 published: true
-date: 2024-07-28T16:27:37.597Z
+date: 2024-07-28T16:33:07.989Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-28T16:27:37.597Z
@@ -349,7 +349,7 @@ Riven uses a `settings.json` file to store its configuration. This file is creat
         "update_interval": 3600  // Update interval for indexer in seconds
     },
     "database": {
-        "host": "postgresql+psycopg2://postgres:postgres@localhost/riven"  // Database connection string
+        "host": "postgresql+psycopg2://postgres:postgres@riven-db/riven"  // Database connection string
     }
 }
 ```
