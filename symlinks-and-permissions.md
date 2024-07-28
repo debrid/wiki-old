@@ -2,7 +2,7 @@
 title: Symlinks and Permissions
 description: Detailed information on how Riven uses symlinks and manages permissions.
 published: true
-date: 2024-07-28T16:29:55.959Z
+date: 2024-07-28T16:41:52.115Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-28T16:29:55.959Z
@@ -14,7 +14,7 @@ Riven uses a symlink-based system to efficiently manage media files. This page p
 
 ## Flowchart: Symlink Function in Riven
 
-![Symlink flowchart](symlinksflowchart.png)
+![alt](https://imgur.com/a/Qajv1Sg)
 
 This flowchart illustrates the symlink creation process in Riven:
 
