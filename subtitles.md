@@ -2,7 +2,7 @@
 title: Subtitles
 description: 
 published: true
-date: 2024-08-11T19:27:45.419Z
+date: 2024-08-11T19:29:04.823Z
 tags: 
 editor: markdown
 dateCreated: 2024-08-11T05:04:56.943Z
