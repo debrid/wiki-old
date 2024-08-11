@@ -2,7 +2,7 @@
 title: Riven Settings.json
 description: 
 published: true
-date: 2024-08-11T05:52:31.149Z
+date: 2024-08-11T05:53:03.040Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-28T16:27:37.597Z
@@ -363,7 +363,7 @@ Riven uses a `settings.json` file to store its configuration. This file is creat
     },
     "post_processing": {
         "subliminal": {
-            "enabled": true,
+            "enabled": false,
             "languages": [
                 "eng"
             ]
