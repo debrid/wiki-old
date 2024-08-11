@@ -2,7 +2,7 @@
 title: Riven Settings.json
 description: 
 published: true
-date: 2024-07-28T16:33:07.989Z
+date: 2024-08-11T05:52:31.149Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-28T16:27:37.597Z
@@ -346,10 +346,28 @@ Riven uses a `settings.json` file to store its configuration. This file is creat
         }
     },
     "indexer": {
-        "update_interval": 3600  // Update interval for indexer in seconds
+        "update_interval": 3600
     },
     "database": {
-        "host": "postgresql+psycopg2://postgres:postgres@riven-db/riven"  // Database connection string
+        "host": "postgresql+psycopg2://postgres:postgres@riven-db/riven"
+    },
+    "notifications": {
+        "enabled": false,
+        "title": "Riven completed something!",
+        "on_item_type": [
+            "movie",
+            "show",
+            "season"
+        ],
+        "service_urls": []
+    },
+    "post_processing": {
+        "subliminal": {
+            "enabled": true,
+            "languages": [
+                "eng"
+            ]
+        }
     }
 }
 ```
