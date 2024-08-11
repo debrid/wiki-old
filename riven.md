@@ -2,7 +2,7 @@
 title: Riven 
 description: Riven Media
 published: true
-date: 2024-07-28T16:34:08.424Z
+date: 2024-08-11T05:02:18.790Z
 tags: riven
 editor: markdown
 dateCreated: 2024-07-15T15:43:03.194Z
@@ -72,6 +72,7 @@ Whether you're a casual viewer or a media enthusiast, Riven offers a powerful, a
     - [Second terminal:](#second-terminal)
 - [Riven Settings.json](#riven-settingsjson)
 - [Symlinks and Permissions](#symlinks-and-permissions)
+- [Subtitles](#subtitles)
 - [Development](#development)
 - [Contributing](#contributing)
 - [License](#license)
@@ -274,6 +275,10 @@ For detailed information on how Riven uses `settings.json` file, please see the 
 ## Symlinks and Permissions
 
 For detailed information on how Riven uses symlinks and manages permissions, please see the [Symlinks and Permissions](./symlinks-and-permissions.md) page.
+
+## Subtitles
+
+For detailed information on how Riven uses subtitles, please see the [Subtitles](./subtitles.md) page.
 
 ## Development
 
