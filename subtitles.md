@@ -2,7 +2,7 @@
 title: Subtitles
 description: 
 published: true
-date: 2024-08-11T19:36:52.666Z
+date: 2024-08-11T20:01:12.432Z
 tags: 
 editor: markdown
 dateCreated: 2024-08-11T05:04:56.943Z
@@ -49,6 +49,8 @@ To enable automatic subtitle downloading, you'll need to make some changes to yo
         }
     }
     ```
+> **Important Note:**  
+> JSON does not allow comments. Any lines that start with `//` or `/* */` will cause a parsing error. Remove the ```// Add these settings for subtitles``` line.
 
    This configuration enables the Subliminal plugin and sets it to download English subtitles (`"eng"`). You can customize the `"languages"` array to include other languages by using their respective [ISO 639-2 codes](https://en.wikipedia.org/wiki/List_of_ISO_639-2_codes).
 > **Additional Note:**  
