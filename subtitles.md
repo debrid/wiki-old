@@ -2,7 +2,7 @@
 title: Subtitles
 description: 
 published: true
-date: 2024-08-11T19:29:04.823Z
+date: 2024-08-11T19:31:36.111Z
 tags: 
 editor: markdown
 dateCreated: 2024-08-11T05:04:56.943Z
@@ -17,7 +17,7 @@ To enable automatic subtitle downloading, you'll need to make some changes to yo
 #### Steps to Update `settings.json`
 
 1. **Locate `settings.json`:**  
-   Find the `settings.json` file in your application's configuration directory.
+   Find the [`settings.json`](./settings.md)  file in your application's configuration directory.
 
 2. **Add the Subliminal Settings:**  
    Insert the following lines under the `"post_processing"` section to enable subtitle downloading:
