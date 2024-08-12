@@ -2,7 +2,7 @@
 title: Riven 
 description: Riven Media
 published: true
-date: 2024-08-12T16:18:15.968Z
+date: 2024-08-12T16:25:19.271Z
 tags: riven
 editor: markdown
 dateCreated: 2024-07-15T15:43:03.194Z
@@ -179,7 +179,7 @@ services:
       - ORIGIN=http://localhost:3000 # set to the url or ip where the frontend is hosted
       - BACKEND_URL=http://riven:8080
       - DIALECT=postgres 
-      - DATABASE_URL=postgres://postgres:postgres@localhost:5432/media 
+      - DATABASE_URL=postgres://postgres:postgres@riven-db:5432/media 
     depends_on:
       riven:
         condition: service_healthy
