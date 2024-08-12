@@ -2,7 +2,7 @@
 title: Riven 
 description: Riven Media
 published: true
-date: 2024-08-12T17:44:08.416Z
+date: 2024-08-12T17:50:45.424Z
 tags: riven
 editor: markdown
 dateCreated: 2024-07-15T15:43:03.194Z
@@ -67,6 +67,7 @@ Whether you're a casual viewer or a media enthusiast, Riven offers a powerful, a
 - [Self Hosted](#self-hosted)
   - [Docker Compose](#docker-compose)
     - [What is ORIGIN?](#what-is-origin)
+  - [Hard Reset](#hard-reset)
   - [Running outside of Docker](#running-outside-of-docker)
     - [First terminal:](#first-terminal)
     - [Second terminal:](#second-terminal)
@@ -239,6 +240,37 @@ Then run `docker compose up -d` to start the container in the background. You ca
 
 
 `ORIGIN` is the URL of the frontend on which you will access it from anywhere. If you are hosting Riven on a vps with IP address `123.45.67.890` then you will need to set the `ORIGIN` to `http://123.45.67.890:3000` (no trailing slash). Similarly, if using a domain name, you will need to set the `ORIGIN` to `http://riven.example.com:3000` (no trailing slash). If you change the port in the `docker-compose.yml` file, you will need to change it in the `ORIGIN` as well.
+
+### Hard Reset
+
+> **Warning**: A hard reset will delete all your current database settings and configurations. This action cannot be undone. Only perform a hard reset if you are sure you want to reset the database or if instructed by support.
+{.is-warning}
+
+To perform a hard reset of the database:
+
+1. **Via Docker Exec**:
+   - Run the following command:
+     ```sh
+     docker exec -it riven python /riven/src/main.py --hard_reset_db
+     ```
+   - This command will reset the database and reinitialize the settings.
+
+2. **Via Environment Variable**:
+   - Set the environment variable `HARD_RESET=true` in your Docker Compose file:
+     ```yml
+     environment:
+       - HARD_RESET=true
+     ```
+   - Then, restart the Docker containers:
+     ```sh
+     docker-compose up -d
+     ```
+   - The reset will be applied, and the environment variable can be removed afterward to prevent further resets.
+
+After the reset, you will need to reconfigure the database-related settings from scratch.
+
+
+
 
 ### Running outside of Docker
 
