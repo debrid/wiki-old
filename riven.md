@@ -2,7 +2,7 @@
 title: Riven 
 description: Riven Media
 published: true
-date: 2024-08-11T05:02:18.790Z
+date: 2024-08-12T16:05:40.756Z
 tags: riven
 editor: markdown
 dateCreated: 2024-07-15T15:43:03.194Z
@@ -93,7 +93,7 @@ Whether you're a casual viewer or a media enthusiast, Riven offers a powerful, a
 | Zilean                                               | ✅         |
 | Listrr                                               | ✅         |
 
-And more to come! Check out our [Project Board](https://github.com/users/dreulavelle/projects/2) to stay informed about upcoming features and integrations.
+And more to come! Check out our [Project Board](https://github.com/orgs/rivenmedia/projects/3/views/2) to stay informed about upcoming features and integrations.
 
 We welcome feature requests and bug reports. Please use our [Issue Tracker](https://github.com/dreulavelle/iceberg/issues) or join our [Discord](https://discord.gg/wDgVdH8vNM) to get involved with the community.
 
