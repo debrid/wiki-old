@@ -2,7 +2,7 @@
 title: Riven 
 description: Riven Media
 published: true
-date: 2024-08-13T18:47:26.763Z
+date: 2024-08-13T18:48:53.037Z
 tags: riven
 editor: markdown
 dateCreated: 2024-07-15T15:43:03.194Z
@@ -243,7 +243,7 @@ Then run `docker compose up -d` to start the container in the background. You ca
 
 
 
-## Hard Reset
+### Hard Reset
 
 > **Warning**: A hard reset will delete all your current database. This action cannot be undone. Only perform a hard reset if you are sure you want to reset the database or if instructed by support.
 {.is-warning}
