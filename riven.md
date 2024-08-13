@@ -2,7 +2,7 @@
 title: Riven 
 description: Riven Media
 published: true
-date: 2024-08-13T18:44:54.526Z
+date: 2024-08-13T18:47:26.763Z
 tags: riven
 editor: markdown
 dateCreated: 2024-07-15T15:43:03.194Z
@@ -233,7 +233,7 @@ Then run `docker compose up -d` to start the container in the background. You ca
 {.is-info}
 
 
-#### What is ORIGIN?
+### What is ORIGIN?
 
 > Setting the correct ORIGIN is crucial to avoid CORS issues and ensure proper functionality.
 {.is-warning}
@@ -242,7 +242,8 @@ Then run `docker compose up -d` to start the container in the background. You ca
 `ORIGIN` is the URL of the frontend on which you will access it from anywhere. If you are hosting Riven on a vps with IP address `123.45.67.890` then you will need to set the `ORIGIN` to `http://123.45.67.890:3000` (no trailing slash). Similarly, if using a domain name, you will need to set the `ORIGIN` to `http://riven.example.com:3000` (no trailing slash). If you change the port in the `docker-compose.yml` file, you will need to change it in the `ORIGIN` as well.
 
 
-#### Hard Reset
+
+## Hard Reset
 
 > **Warning**: A hard reset will delete all your current database. This action cannot be undone. Only perform a hard reset if you are sure you want to reset the database or if instructed by support.
 {.is-warning}
