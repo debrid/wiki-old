@@ -2,7 +2,7 @@
 title: Ubuntu install guide
 description: 
 published: true
-date: 2024-08-13T18:35:17.967Z
+date: 2024-08-13T18:41:23.195Z
 tags: riven
 editor: markdown
 dateCreated: 2024-08-13T18:35:17.967Z
@@ -18,7 +18,7 @@ This guide will walk you through the process of installing Riven, an advanced me
 
 Before you begin, ensure you have the following:
 
-1. An Ubuntu server (18.04 LTS or later recommended)
+1. An Ubuntu server (22.04 LTS or later recommended)
 2. Root or sudo access to the server
 3. Basic familiarity with command line interface
 
