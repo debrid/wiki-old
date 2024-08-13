@@ -2,7 +2,7 @@
 title: Riven 
 description: Riven Media
 published: true
-date: 2024-08-13T19:00:18.666Z
+date: 2024-08-13T19:05:45.994Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-15T15:43:03.194Z
@@ -100,11 +100,29 @@ We welcome feature requests and bug reports. Please use our [Issue Tracker](http
 
 ## Key Features
 
-- Automated media discovery and download through multiple sources
-- Integration with various Download Services for high-speed downloads
-- Seamless media server library management
-- Support for various third-party services for content curation
-- Efficient symlink-based file management
+🔍 **Automated Content Discovery**
+- Integrates with services like Overseerr, Mdblist, and Trakt
+- Finds new media based on your preferences and watchlists
+
+⬇️ **Efficient Downloads**
+- Uses Real-Debrid for high-speed downloads
+- Supports multiple download services
+
+🎬 **Smart Media Management**
+- Creates an organized media library using symlinks
+- Automatically updates your media server with new content
+
+🔧 **Flexible Configuration**
+- Customizable quality preferences
+- Fine-tune your media organization structure
+
+🌐 **User-Friendly Web Interface**
+- Easy-to-use dashboard for managing your media
+- Monitor downloads and library status
+
+🔒 **Privacy-Focused**
+- No personal data stored or shared
+- Self-hosted option for complete control
 
 ## Main Components and Their Roles
 
@@ -229,7 +247,7 @@ services:
 
 Then run `docker compose up -d` to start the container in the background. You can then access the web interface at `http://localhost:3000` or whatever port and origin you set in the `docker-compose.yml` file.
 
-> On first run, Riven creates a `settings.json` file in the `data` directory. You can edit the settings from frontend, or manually edit the file and restart the container or use `.env` or docker-compose environment variables to set the settings (see `.env.example` for reference).
+> On first run, Riven creates a `settings.json` file in the `data` directory. You can edit the settings from frontend, or manually edit the file and restart the container.
 {.is-info}
 
 
