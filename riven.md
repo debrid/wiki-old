@@ -2,7 +2,7 @@
 title: Riven 
 description: Riven Media
 published: true
-date: 2024-08-13T06:43:03.165Z
+date: 2024-08-13T18:44:54.526Z
 tags: riven
 editor: markdown
 dateCreated: 2024-07-15T15:43:03.194Z
@@ -38,7 +38,7 @@ dateCreated: 2024-07-15T15:43:03.194Z
 
 <div align="center">
   <p>Plex torrent streaming through Real Debrid and 3rd party services like Overseerr, Mdblist, etc.</p>
-  <p>Rewrite of <a target="_blank" href="https://github.com/itsToggle/plex_debrid">plex_debrid project.</a></p>
+  <p>Rewrite of <a target="_blank" href="https://github.com/itsToggle/plex_debrid">Plex Debrid project.</a></p>
 </div>
 
 ## What is Riven?
