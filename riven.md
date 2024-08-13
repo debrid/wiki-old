@@ -2,7 +2,7 @@
 title: Riven 
 description: Riven Media
 published: true
-date: 2024-08-13T18:51:31.814Z
+date: 2024-08-13T18:59:10.079Z
 tags: riven
 editor: markdown
 dateCreated: 2024-07-15T15:43:03.194Z
@@ -80,19 +80,19 @@ Whether you're a casual viewer or a media enthusiast, Riven offers a powerful, a
 
 ## Supported Services
 
-| Service                                              | Supported |
-| ---------------------------------------------------- | --------- |
-| Download Services (Real-Debrid, *AllDebrid, Torbox*) | ✅         |
-| Media Server (Plex, *Jellyfin, Emby*)                | ✅         |
-| Overseerr                                            | ✅         |
-| Mdblist                                              | ✅         |
-| Trakt                                                | ✅         |
-| Jackett                                              | ✅         |
-| Media Server Watchlist                               | ✅         |
-| Torrentio                                            | ✅         |
-| Orionoid                                             | ✅         |
-| Zilean                                               | ✅         |
-| Listrr                                               | ✅         |
+| Service | Status | Description |
+|---------|--------|-------------|
+| ![Real-Debrid](https://fcdn.real-debrid.com/0830/images/logo.png) | ✅ | Primary download service |
+| ![Plex](https://www.plex.tv/wp-content/themes/plex/assets/img/plex-logo.svg)  | ✅ | Media server integration |
+| ![Overseerr](https://overseerr.dev/_next/image?url=%2Fos_logo_filled.svg&w=48&q=75) Overseerr | ✅ | Request management |
+| ![Mdblist](https://i.imgur.com/icon-mdblist.png) Mdblist | ✅ | Watchlist integration |
+| ![Trakt](https://i.imgur.com/icon-trakt.png) Trakt | ✅ | Watchlist and scrobbling |
+| ![Jackett](https://i.imgur.com/icon-jackett.png) Jackett | ✅ | Torrent indexer |
+| ![Torrentio](https://i.imgur.com/icon-torrentio.png) Torrentio | ✅ | Torrent provider |
+| ![Orionoid](https://i.imgur.com/icon-orionoid.png) Orionoid | ✅ | Link provider |
+| ![Zilean](https://i.imgur.com/icon-zilean.png) Zilean | ✅ | Subtitle provider |
+| ![Listrr](https://i.imgur.com/icon-listrr.png) Listrr | ✅ | List management |
+
 
 And more to come! Check out our [Project Board](https://github.com/orgs/rivenmedia/projects/3/views/2) to stay informed about upcoming features and integrations.
 
@@ -100,11 +100,29 @@ We welcome feature requests and bug reports. Please use our [Issue Tracker](http
 
 ## Key Features
 
-- Automated media discovery and download through multiple sources
-- Integration with various Download Services for high-speed downloads
-- Seamless media server library management
-- Support for various third-party services for content curation
-- Efficient symlink-based file management
+🔍 **Automated Content Discovery**
+- Integrates with services like Overseerr, Mdblist, and Trakt
+- Finds new media based on your preferences and watchlists
+
+⬇️ **Efficient Downloads**
+- Uses Real-Debrid for high-speed downloads
+- Supports multiple download services
+
+🎬 **Smart Media Management**
+- Creates an organized media library using symlinks
+- Automatically updates your media server with new content
+
+🔧 **Flexible Configuration**
+- Customizable quality preferences
+- Fine-tune your media organization structure
+
+🌐 **User-Friendly Web Interface**
+- Easy-to-use dashboard for managing your media
+- Monitor downloads and library status
+
+🔒 **Privacy-Focused**
+- No personal data stored or shared
+- Self-hosted option for complete control
 
 ## Main Components and Their Roles
 
