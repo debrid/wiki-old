@@ -2,7 +2,7 @@
 title: Riven 
 description: Riven Media
 published: true
-date: 2024-08-13T18:48:53.037Z
+date: 2024-08-13T18:49:29.996Z
 tags: riven
 editor: markdown
 dateCreated: 2024-07-15T15:43:03.194Z
@@ -273,7 +273,7 @@ To perform a hard reset of the database:
        - HARD_RESET=false
      ```
 
-### Running outside of Docker
+## Running outside of Docker
 
 > Running outside of Docker can be useful for development or if you prefer more control over the environment.
 
