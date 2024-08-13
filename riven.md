@@ -2,7 +2,7 @@
 title: Riven 
 description: Riven Media
 published: true
-date: 2024-08-12T17:51:52.223Z
+date: 2024-08-13T06:31:17.588Z
 tags: riven
 editor: markdown
 dateCreated: 2024-07-15T15:43:03.194Z
@@ -267,10 +267,6 @@ To perform a hard reset of the database:
      docker-compose up -d
      ```
    - The reset will be applied, and the environment variable can be removed afterward to prevent further resets.
-
-After the reset, you will need to reconfigure the database-related settings from scratch.
-
-
 
 
 ### Running outside of Docker
