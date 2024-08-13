@@ -2,7 +2,7 @@
 title: Riven 
 description: Riven Media
 published: true
-date: 2024-08-13T19:05:45.994Z
+date: 2024-08-13T19:10:07.344Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-15T15:43:03.194Z
@@ -332,6 +332,10 @@ For detailed information on how Riven uses symlinks and manages permissions, ple
 ## Subtitles
 
 For detailed information on how Riven uses subtitles, please see the [Subtitles](./subtitles.md) page.
+
+## Troubleshooting
+
+Please see the [Troubleshooting](./troubleshooting.md) page.
 
 ## Development
 
