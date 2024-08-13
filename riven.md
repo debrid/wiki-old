@@ -2,7 +2,7 @@
 title: Riven 
 description: Riven Media
 published: true
-date: 2024-08-13T18:49:29.996Z
+date: 2024-08-13T18:51:24.984Z
 tags: riven
 editor: markdown
 dateCreated: 2024-07-15T15:43:03.194Z
@@ -67,7 +67,7 @@ Whether you're a casual viewer or a media enthusiast, Riven offers a powerful, a
 - [Self Hosted](#self-hosted)
   - [Docker Compose](#docker-compose)
     - [What is ORIGIN?](#what-is-origin)
-  - [Hard Reset](#hard-reset)
+    - [Hard Reset](#hard-reset)
   - [Running outside of Docker](#running-outside-of-docker)
     - [First terminal:](#first-terminal)
     - [Second terminal:](#second-terminal)
