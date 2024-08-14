@@ -2,7 +2,7 @@
 title: Riven Settings.json
 description: 
 published: true
-date: 2024-08-11T05:53:03.040Z
+date: 2024-08-14T10:09:23.546Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-28T16:27:37.597Z
@@ -25,7 +25,7 @@ Riven uses a `settings.json` file to store its configuration. This file is creat
     "tracemalloc": false,  // Enable tracemalloc for memory profiling
     "symlink": {
         "rclone_path": ".",  // Path to rclone mount
-        "library_path": ".",  // Path to media library
+        "library_path": ".",  // Path to symlinks created by riven and accessed by Plex
         "separate_anime_dirs": false  // Use separate directories for anime
     },
     "updaters": {
