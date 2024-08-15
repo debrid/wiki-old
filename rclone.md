@@ -2,7 +2,7 @@
 title: Rclone
 description: 
 published: true
-date: 2024-08-15T10:14:42.274Z
+date: 2024-08-15T10:14:58.128Z
 tags: 
 editor: markdown
 dateCreated: 2024-08-15T10:06:47.808Z
@@ -29,7 +29,7 @@ no_head = false
 no_slash = false
 ```
 3. Make sure that you have fusermount3 installed `sudo apt install fuse3`
-4. Add `user_all_other` to your fuse config file at `/etc/fuse.conf`
+4. Add `user_allow_other` to your fuse config file at `/etc/fuse.conf`
 ```
 # user_allow_other - Using the allow_other mount option works fine as root, in
 # order to have it work as user you need user_allow_other in /etc/fuse.conf as
