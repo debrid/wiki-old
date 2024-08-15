@@ -2,7 +2,7 @@
 title: Rclone
 description: 
 published: true
-date: 2024-08-15T10:10:10.150Z
+date: 2024-08-15T10:14:42.274Z
 tags: 
 editor: markdown
 dateCreated: 2024-08-15T10:06:47.808Z
@@ -40,4 +40,24 @@ no_slash = false
 
 user_allow_other
 ```
-5. Start the rclone service with `sudo systemctl start rclone` and enable it to run on startup `sudo systemctl enable rclone`
+5. Add a file called `rclone.service` to `/etc/systemd/system/rclone.service`.
+Tweak the rclone arguments to your liking
+```
+[Unit]
+Description=Rclone Mount Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/rclone mount zurg: /mnt/zurg --allow-other --dir-cache-time 10s --vfs-cache-mode full --vfs-read-chunk-size 8M --vfs-read-chunk-size-limit 2G --buffer-size 16M --vfs-cache-max-age 150h --vfs-cache-max-size 20G --vfs-fast-fingerprint --uid 1000 --gid 1000
+ExecStop=/bin/fusermount -u /mnt/zurg
+Restart=on-failure
+RestartSec=10
+User=YOURUSERNAME
+Group=YOURUSERNAME
+
+[Install]
+WantedBy=default.target
+```
+6. Reload the systemd daemon: `sudo systemctl daemon-reload`
+7. Start the rclone service with `sudo systemctl start rclone` and enable it to run on startup `sudo systemctl enable rclone`
