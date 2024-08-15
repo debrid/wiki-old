@@ -2,14 +2,14 @@
 title: Rclone
 description: 
 published: true
-date: 2024-08-15T10:06:47.808Z
+date: 2024-08-15T10:10:10.150Z
 tags: 
 editor: markdown
 dateCreated: 2024-08-15T10:06:47.808Z
 ---
 
-# Zurg
-
+# Rclone
+&nbsp;
 ## Setup with SystemD
 
 1. Install the rclone binary
